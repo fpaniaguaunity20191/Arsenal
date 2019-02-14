@@ -14,7 +14,7 @@ public class Proyectil3 : MonoBehaviour {
 	
 	private void Detonar()
     {
-        GetComponent<Rigidbody>().isKinematic = true;//Desactivamos el rigidbody del proyectil
+        //GetComponent<Rigidbody>().isKinematic = true;//Desactivamos el rigidbody del proyectil
         Collider[] afectados = Physics.OverlapSphere(transform.position, radio, capaEnemigos);
         foreach (Collider afectado in afectados)
         {
